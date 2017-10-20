@@ -44,13 +44,12 @@ public class Main extends GameFramework {
             if(model.getType() == "Asteroid") ellipse(model.getPosition().x(), model.getPosition().y(), 27,27);
         }
 
-        PImage image = loadImage("spaceship.png");
-        image(image, 100, 100);
+
 
     }
 
     @Override
     public void keyPressed(KeyEvent event) {
-
+        System.out.println("Pressed");
     }
 }
