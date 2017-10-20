@@ -38,7 +38,10 @@ public class AsteroidController {
         //System.out.println("Created Ast at "+ randomX + ", "+randomY);
     }
 
-    public void update(float time){
-        //TODO Updates positions
+    public void update(){
+        //Test if a Asteroid is dead and deletes it
+        for (Asteroid asteroid: asteroidsOnScreen){
+            if(!asteroid.isAlive()) asteroidsOnScreen.remove(asteroid);
+        }
     }
 }

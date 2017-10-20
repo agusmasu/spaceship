@@ -20,6 +20,7 @@ public class SpaceShip extends AbstractModel {
     public SpaceShip(Vector2 position, Weapon standart) {
         super(position, new Rectangle(Math.round(position.x()), Math.round(position.y()), 100, 100), "edu.austral.resources.spaceship.png");
         standardWeapon = standart;
+        health = 100;
     }
 
     public float getHealth() {
@@ -45,16 +46,30 @@ public class SpaceShip extends AbstractModel {
     }
 
     public void move(KeyDirection toMove){
-        //switch con las directions
+        switch(toMove){
+            case UP:
+                position.$plus(new Vector2(0, 1));
+                return;
+            case DOWN:
+                position.$plus(new Vector2(0, -1));
+                return;
+            case RIGHT:
+                position.$plus(new Vector2(1, 0));
+                return;
+            case LEFT:
+                position.$plus(new Vector2(-1, 1));
+                return;
+        }
     }
 
     @Override
     public void collisionedWith(AbstractModel collisionable) {
         if (collisionable.getType() == "Asteroid"){
-            //TODO should harm spaceship
+            health -= 20;
         }
-        else if (collisionable.getType() == "Drop"){
+        else if (collisionable.getType() == "Bullet"){
+            health-= 10;
+        }
 
-        }
     }
 }

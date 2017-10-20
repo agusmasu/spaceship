@@ -10,15 +10,17 @@ import java.awt.*;
  */
 public abstract class AbstractModel implements Collisionable<AbstractModel>{
 
-    private Vector2 position;
+    protected Vector2 position;
     protected String type;
-    private Shape shape;
+    protected Shape shape;
     private String imagePath;
+    protected boolean isAlive;
 
     public AbstractModel(Vector2 position, Shape shape, String imagePath) {
         this.position = position;
         this.shape = shape;
         this.imagePath = imagePath;
+        isAlive = true;
     }
 
     public Vector2 getPosition() {
@@ -41,5 +43,11 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
 
     public String getImagePath() {
         return imagePath;
+    }
+
+    public void kill(){isAlive = false;}
+
+    public boolean isAlive() {
+        return isAlive;
     }
 }

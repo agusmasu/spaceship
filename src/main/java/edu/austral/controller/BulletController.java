@@ -20,6 +20,18 @@ public class BulletController {
         bulletsOnScreen = new ArrayList<>();
     }
 
+    //Added method
+    public void update(float time, float maxX, float maxY){
+        for (Bullet bullet: bulletsOnScreen){
+
+
+            if(bullet.getPosition().x() > maxX) bullet.kill();
+            if(bullet.getPosition().y() > maxY) bullet.kill();
+
+            if(!bullet.isAlive()) bulletsOnScreen.remove(bullet);
+        }
+    }
+
     public void addBullet(Bullet bullet){
         bulletsOnScreen.add(bullet);
     }

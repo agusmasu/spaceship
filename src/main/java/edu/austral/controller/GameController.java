@@ -25,7 +25,7 @@ public class GameController {
     //Main update
     public void update(float time){
 
-        asteroidController.update(time);
+        asteroidController.update();
         if (System.currentTimeMillis()%10 == 0) asteroidController.generateRandomASteroid(500,500);
         playerController.update(time);
         List<AbstractModel> asteroids = asteroidController.getAsteroidsOnScreen();
