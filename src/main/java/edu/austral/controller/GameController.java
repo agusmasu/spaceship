@@ -1,9 +1,13 @@
 package edu.austral.controller;
 
 import edu.austral.model.AbstractModel;
+import edu.austral.model.Board;
+import edu.austral.model.Bullet;
 import edu.austral.model.Player;
 import edu.austral.model.key.KeyDictionary;
 import edu.austral.model.key.KeyDirection;
+import edu.austral.util.CollisionEngine;
+import edu.austral.util.Collisionable;
 import edu.austral.view.UIManager;
 
 import java.util.List;
@@ -14,7 +18,14 @@ import java.util.List;
 public class GameController {
     public PlayerController playerController;
     public AsteroidController asteroidController;
+    public BulletController bulletController = BulletController.getInstance();
     public UIManager uiManager;
+    private Board board;
+    private CollisionEngine engine;
+
+    public void setBoard(Board board) {
+        this.board = board;
+    }
 
     private static GameController ourInstance = new GameController();
 
@@ -24,14 +35,21 @@ public class GameController {
 
     //Main update
     public void update(float time){
+        //Random to generate asteroids
+        if (System.currentTimeMillis()%10 == 0) asteroidController.generateRandomASteroid(board.getWidth(), board.getHeight());
 
         asteroidController.update();
-        if (System.currentTimeMillis()%10 == 0) asteroidController.generateRandomASteroid(500,500);
-        playerController.update(time);
-        List<AbstractModel> asteroids = asteroidController.getAsteroidsOnScreen();
-        List<AbstractModel> spaceShips = playerController.getSpaceShips();
-        uiManager.appendsListToDrawables(asteroids);
-        uiManager.appendsListToDrawables(spaceShips);
+        playerController.update(time, board);
+        bulletController.update(time, board.getWidth(), board.getHeight());
+
+        List<AbstractModel> toDraw = asteroidController.getAsteroidsOnScreen();
+        toDraw.addAll(playerController.getSpaceShips());
+        toDraw.addAll(bulletController.getBulletsOnScreen());
+
+
+
+        //Adds alll lists to UIManager
+        uiManager.appendsListToDrawables(toDraw);
     }
 
     //Occurs when a key is pressed
@@ -63,6 +81,7 @@ public class GameController {
         playerController = PlayerController.getInstance();
         asteroidController = AsteroidController.getInstance();
         uiManager = UIManager.getInstance();
+        engine = new CollisionEngine();
     }
 
     public void addPlayer(Player player){

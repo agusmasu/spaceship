@@ -18,7 +18,8 @@ public class SpaceShip extends AbstractModel {
     private int primaryWeaponAmmo;
 
     public SpaceShip(Vector2 position, Weapon standart) {
-        super(position, new Rectangle(Math.round(position.x()), Math.round(position.y()), 100, 100), "edu.austral.resources.spaceship.png");
+        super(position, new Rectangle(Math.round(position.x()), Math.round(position.y()), 100, 100),
+                "edu.austral.resources.spaceship.png", "SpaceShip");
         standardWeapon = standart;
         health = 100;
     }
@@ -48,17 +49,17 @@ public class SpaceShip extends AbstractModel {
     public void move(KeyDirection toMove){
         switch(toMove){
             case UP:
-                position.$plus(new Vector2(0, 1));
-                return;
+                position = position.$plus(new Vector2(0, 5));
+                break;
             case DOWN:
-                position.$plus(new Vector2(0, -1));
-                return;
+                position = position.$plus(new Vector2(0, -5));
+                break;
             case RIGHT:
-                position.$plus(new Vector2(1, 0));
-                return;
+                position = position.$plus(new Vector2(5, 0));
+                break;
             case LEFT:
-                position.$plus(new Vector2(-1, 1));
-                return;
+                position = position.$plus(new Vector2(-5, 1));
+                break;
         }
     }
 
@@ -68,7 +69,7 @@ public class SpaceShip extends AbstractModel {
             health -= 20;
         }
         else if (collisionable.getType() == "Bullet"){
-            health-= 10;
+            health -= ((Bullet)collisionable).getDamage();
         }
 
     }

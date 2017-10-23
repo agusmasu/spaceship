@@ -14,7 +14,7 @@ public class PowerUp extends AbstractModel {
     private float speedMultiplicator;
 
     public PowerUp(Vector2 position, Shape shape, float speedMultiplicator) {
-        super(position, shape, imagePath);
+        super(position, shape, imagePath, "PowerUp");
         this.speedMultiplicator = speedMultiplicator;
 
     }

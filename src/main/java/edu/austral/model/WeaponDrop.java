@@ -12,8 +12,7 @@ public class WeaponDrop extends AbstractModel {
     private Weapon weapon;
 
     public WeaponDrop(Vector2 position, Shape shape, Weapon weapon) {
-        super(position, shape, imagePath);
-        type = "WeaponDrop";
+        super(position, shape, imagePath, "WeaponDrop");
         this.weapon = weapon;
     }
 

@@ -2,6 +2,7 @@ package edu.austral.controller;
 
 
 import edu.austral.model.AbstractModel;
+import edu.austral.model.Board;
 import edu.austral.model.Player;
 
 import java.util.ArrayList;
@@ -29,9 +30,14 @@ public class PlayerController {
     }
 
     //Updates Spaceship position and
-    public void update(float time){
+    public void update(float time, Board board){
         Player one = playerHistory.get(playerOneListPosition);
+        Player two = playerHistory.get(playerTwoListPosition);
 
+        if (!board.isInside(one.getSpaceship())){
+            System.out.println("ITS OUTSIDE");
+            one.getSpaceship().moveTo(0,0);
+        }
 
 
     }

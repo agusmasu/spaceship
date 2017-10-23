@@ -16,10 +16,11 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
     private String imagePath;
     protected boolean isAlive;
 
-    public AbstractModel(Vector2 position, Shape shape, String imagePath) {
+    public AbstractModel(Vector2 position, Shape shape, String imagePath, String type) {
         this.position = position;
         this.shape = shape;
         this.imagePath = imagePath;
+        this.type = type;
         isAlive = true;
     }
 
@@ -29,6 +30,10 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
 
     public void move(float x, float y){
         position = position.$plus(new Vector2(x,y));
+    }
+
+    public void moveTo(float x, float y){
+        position = new Vector2(x,y);
     }
 
 
@@ -49,5 +54,9 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
 
     public boolean isAlive() {
         return isAlive;
+    }
+
+    public void setShape(Shape shape) {
+        this.shape = shape;
     }
 }

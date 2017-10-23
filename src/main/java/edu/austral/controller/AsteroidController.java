@@ -19,7 +19,7 @@ public class AsteroidController {
     }
 
     private AsteroidController() {
-        asteroidsOnScreen = new ArrayList<>();
+        asteroidsOnScreen = new ArrayList<Asteroid>();
     }
 
     public void deleteasteroid(Asteroid asteroid){
@@ -39,9 +39,6 @@ public class AsteroidController {
     }
 
     public void update(){
-        //Test if a Asteroid is dead and deletes it
-        for (Asteroid asteroid: asteroidsOnScreen){
-            if(!asteroid.isAlive()) asteroidsOnScreen.remove(asteroid);
-        }
+        //for(Asteroid as: asteroidsOnScreen){}
     }
 }
