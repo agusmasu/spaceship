@@ -4,6 +4,7 @@ import edu.austral.model.AbstractModel;
 import edu.austral.model.Asteroid;
 import edu.austral.model.Board;
 import edu.austral.model.key.KeyDirection;
+import edu.austral.util.AsteroidGenerator;
 import edu.austral.util.Vector2;
 import processing.core.PApplet;
 
@@ -13,7 +14,7 @@ import java.util.List;
 /**
  * Created by Agustin on 19/10/2017.
  */
-public class AsteroidController {
+public class AsteroidController implements AsteroidGenerator{
     private static AsteroidController ourInstance = new AsteroidController();
     private List<Asteroid> asteroidsOnScreen;
 
@@ -25,17 +26,32 @@ public class AsteroidController {
         asteroidsOnScreen = new ArrayList<Asteroid>();
     }
 
-    public void deleteasteroid(Asteroid asteroid){
-        asteroidsOnScreen.remove(asteroid);
-    }
-
     public List<AbstractModel> getAsteroidsOnScreen() {
         return (List<AbstractModel>) (Object)asteroidsOnScreen;
     }
 
-    public void generateRandomASteroid(int boundX, int boundY, PApplet graphics){
-        float randomX = (float)Math.random()*boundX;
-        float randomY = (float)Math.random()*boundY;
+    private void generateRandomASteroid(Board board, PApplet graphics){
+
+        asteroidsOnScreen.add(generateAsteroid(board, graphics));
+
+
+    }
+
+    public void update(Board board, PApplet graphics){
+
+        if (graphics.frameCount % 200 == 0) generateRandomASteroid(board, graphics);
+
+        for (int i = 0; i< asteroidsOnScreen.size(); i++){
+            Asteroid asteroid = asteroidsOnScreen.get(i);
+            if(!asteroid.isAlive()) asteroidsOnScreen.remove(asteroid);
+            else asteroid.move();
+        }
+    }
+
+    @Override
+    public Asteroid generateAsteroid(Board board, PApplet graphics) {
+        float randomX = (float)Math.random()*board.getWidth();
+        float randomY = (float)Math.random()*board.getHeight();
         //Asteroid asteroid = new Asteroid(new Vector2(randomX, randomY), graphics);
         int option = (int) (Math.random()*4);
         Asteroid asteroid;
@@ -56,19 +72,7 @@ public class AsteroidController {
                 asteroid = new Asteroid(new Vector2(randomX, randomY), graphics, KeyDirection.DOWN);
                 break;
         }
-        asteroidsOnScreen.add(asteroid);
-
-
+        return asteroid;
     }
 
-    public void update(Board board, PApplet graphics){
-
-        if (graphics.frameCount % 200 == 0) generateRandomASteroid(board.getWidth(), board.getHeight(), graphics);
-
-        for (int i = 0; i< asteroidsOnScreen.size(); i++){
-            Asteroid asteroid = asteroidsOnScreen.get(i);
-            if(!asteroid.isAlive()) asteroidsOnScreen.remove(asteroid);
-            else asteroid.move();
-        }
-    }
 }

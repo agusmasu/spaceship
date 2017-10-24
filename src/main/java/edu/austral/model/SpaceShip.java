@@ -3,6 +3,7 @@ package edu.austral.model;
 import edu.austral.model.key.KeyDirection;
 import edu.austral.util.Vector2;
 import processing.core.PApplet;
+import processing.core.PFont;
 
 import java.awt.*;
 
@@ -67,8 +68,9 @@ public class SpaceShip extends AbstractModel {
                 position = position.$plus(new Vector2(-5*speed, 0));
                 break;
         }
-        direction = toMove;
+        if (toMove != KeyDirection.NONE) direction = toMove;
         autoUpdateShape();
+        System.out.println(toMove);
     }
 
     @Override
@@ -83,8 +85,11 @@ public class SpaceShip extends AbstractModel {
             health -= 20;
             System.out.println("Asteroid collided, HEALTH: "+health);
             if (health <= 0){
+                PFont font = graphica.createFont("Arial", 40);
+                graphica.textFont(font);
                 isAlive = false;
-                graphica.text("PERDISTE", 0, 100);
+                graphica.text("PERDISTE", 100, 250);
+                graphica.textFont(graphica.createFont("Arial", 10));
                 graphica.stop();
             }
         }
@@ -101,4 +106,6 @@ public class SpaceShip extends AbstractModel {
     private void autoUpdateShape(){
         shape = new Rectangle(Math.round(position.x()), Math.round(position.y()), width, height);
     }
+
+
 }

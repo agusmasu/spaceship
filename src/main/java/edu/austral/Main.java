@@ -28,7 +28,7 @@ public class Main extends GameFramework {
         gameController.playerController.createPlayer(one);
         gameController.playerController.setFirstPlayer(one);
 
-        Weapon weapon = new Weapon();
+        Weapon weapon = new Weapon(7);
         SpaceShip ss = new SpaceShip(new Vector2(0,0), weapon, graphics);
 
         one.setSpaceship(ss);
@@ -41,13 +41,12 @@ public class Main extends GameFramework {
             started = true;
             defaultSettings(graphics);
         }
+        setup();
 
         gameController.update(time, graphics);
         List<AbstractModel> models = gameController.uiManager.getToDraw();
 
         gameController.uiManager.draw(graphics);
-
-        //image(loadImage("resources/bullet.jpg"), 10, 10 , 10, 10);
 
     }
 
@@ -69,5 +68,10 @@ public class Main extends GameFramework {
         gameController.onKeyPressed(keyCode, this);
 
         draw();
+    }
+
+    @Override
+    public void setup() {
+        background(loadImage("resources/background.jpg"));
     }
 }

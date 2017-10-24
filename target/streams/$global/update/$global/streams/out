@@ -1,114 +1,45 @@
-[info] Updating {file:/C:/Users/Agustin/repos/starships/}starships...
-[debug] :: resolving dependencies :: default#starships_2.12;0.1
+[info] Updating {file:/C:/Users/AlumnosFI/Desktop/spaceship-master/}spaceship-master...
+[debug] :: resolving dependencies :: starships#starships_2.12;0.1
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.scala-lang#scala-library;2.12.3 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[info] Resolving org.scala-lang#scala-library;2.12.3 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.scala-lang\scala-library\2.12.3\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.scala-lang#scala-library;2.12.3
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.pom
-[debug] 	public: found md file for org.scala-lang#scala-library;2.12.3
-[debug] 		=> https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.pom (2.12.3)
-[debug] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.pom
-[debug] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.12.3!scala-library.pom(pom.original) (1183ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.scala-lang\scala-library\2.12.3\jars\scala-library.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar
-[debug] 	found org.scala-lang#scala-library;2.12.3 in public
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.3
+[debug] 	found org.scala-lang#scala-library;2.12.3 in sbt-chain
 [debug] 	[2.12.3] org.scala-lang#scala-library;2.12.3
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.processing#core;3.2.3 ...
 [debug] sbt-chain: Checking cache for: dependency: org.processing#core;3.2.3 {compile=[default(compile)]}
-[info] Resolving org.processing#core;3.2.3 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.processing#core;3.2.3 {compile=[default(compile)]}
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.processing\core\3.2.3\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.processing#core;3.2.3
-[debug] 		tried https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.pom
-[debug] 	public: found md file for org.processing#core;3.2.3
-[debug] 		=> https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.pom (3.2.3)
-[debug] downloading https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.pom
-[debug] 	[SUCCESSFUL ] org.processing#core;3.2.3!core.pom(pom.original) (987ms)
-[info] Resolving org.processing#processing-complete;3.2.3 ...
-[debug] sbt-chain: Checking cache for: dependency: org.processing#processing-complete;3.2.3 {}
-[info] Resolving org.processing#processing-complete;3.2.3 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.processing#processing-complete;3.2.3 {}
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.processing\processing-complete\3.2.3\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.processing#processing-complete;3.2.3
-[debug] 		tried https://repo1.maven.org/maven2/org/processing/processing-complete/3.2.3/processing-complete-3.2.3.pom
-[debug] 	public: found md file for org.processing#processing-complete;3.2.3
-[debug] 		=> https://repo1.maven.org/maven2/org/processing/processing-complete/3.2.3/processing-complete-3.2.3.pom (3.2.3)
-[debug] downloading https://repo1.maven.org/maven2/org/processing/processing-complete/3.2.3/processing-complete-3.2.3.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/processing/processing-complete/3.2.3/processing-complete-3.2.3.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/processing/processing-complete/3.2.3/processing-complete-3.2.3.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/processing/processing-complete/3.2.3/processing-complete-3.2.3.pom
-[debug] 	[SUCCESSFUL ] org.processing#processing-complete;3.2.3!processing-complete.pom(pom.original) (717ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.processing\processing-complete\3.2.3\jars\processing-complete.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/processing/processing-complete/3.2.3/processing-complete-3.2.3.jar
-[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/processing/processing-complete/3.2.3/processing-complete-3.2.3.jar
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.processing\core\3.2.3\jars\core.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.jar
-[debug] 	found org.processing#core;3.2.3 in public
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
+[debug] sbt-chain: module revision found in cache: org.processing#core;3.2.3
+[debug] 	found org.processing#core;3.2.3 in sbt-chain
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.gluegen#gluegen-rt-main;2.3.2 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.jogamp.gluegen#gluegen-rt-main;2.3.2 ...
 [debug] sbt-chain: Checking cache for: dependency: org.jogamp.gluegen#gluegen-rt-main;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[info] Resolving org.jogamp.gluegen#gluegen-rt-main;2.3.2 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.jogamp.gluegen#gluegen-rt-main;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.gluegen\gluegen-rt-main\2.3.2\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.jogamp.gluegen#gluegen-rt-main;2.3.2
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.pom
-[debug] 	public: found md file for org.jogamp.gluegen#gluegen-rt-main;2.3.2
-[debug] 		=> https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.pom (2.3.2)
-[debug] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.pom
-[debug] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt-main;2.3.2!gluegen-rt-main.pom(pom.original) (738ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.gluegen\gluegen-rt-main\2.3.2\jars\gluegen-rt-main.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.jar
-[debug] 	found org.jogamp.gluegen#gluegen-rt-main;2.3.2 in public
+[debug] sbt-chain: module revision found in cache: org.jogamp.gluegen#gluegen-rt-main;2.3.2
+[debug] 	found org.jogamp.gluegen#gluegen-rt-main;2.3.2 in sbt-chain
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.gluegen#gluegen-rt-main;2.3.2 [compile->compile(*)]
 [debug] == resolving dependencies org.jogamp.gluegen#gluegen-rt-main;2.3.2->org.jogamp.gluegen#gluegen-rt;2.3.2 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.jogamp.gluegen#gluegen-rt;2.3.2 ...
-[debug] sbt-chain: Checking cache for: MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]},dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]})
-[info] Resolving org.jogamp.gluegen#gluegen-rt;2.3.2 ...
-[debug] sbt-chain-delegate: Checking cache for: MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]},dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]})
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.gluegen\gluegen-rt\2.3.2\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.jogamp.gluegen#gluegen-rt;2.3.2
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.pom
-[debug] 	public: found md file for org.jogamp.gluegen#gluegen-rt;2.3.2
-[debug] 		=> https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.pom (2.3.2)
-[debug] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.pom
-[debug] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.pom(pom.original) (701ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.gluegen\gluegen-rt\2.3.2\jars\gluegen-rt.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.jar
-[debug] 	found org.jogamp.gluegen#gluegen-rt;2.3.2 in public
+[debug] sbt-chain: Checking cache for: dependency: org.jogamp.gluegen#gluegen-rt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.jogamp.gluegen#gluegen-rt;2.3.2
+[debug] 	found org.jogamp.gluegen#gluegen-rt;2.3.2 in sbt-chain
 [debug] == resolving dependencies org.jogamp.gluegen#gluegen-rt-main;2.3.2->org.jogamp.gluegen#gluegen-rt;2.3.2 [compile->compile(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.gluegen#gluegen-rt-main;2.3.2 [compile->runtime(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.gluegen#gluegen-rt-main;2.3.2 [compile->compile]
@@ -119,21 +50,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.jogamp.jogl#jogl;2.3.2 ...
 [debug] sbt-chain: Checking cache for: dependency: org.jogamp.jogl#jogl;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[info] Resolving org.jogamp.jogl#jogl;2.3.2 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.jogamp.jogl#jogl;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\jogl\2.3.2\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.jogamp.jogl#jogl;2.3.2
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.pom
-[debug] 	public: found md file for org.jogamp.jogl#jogl;2.3.2
-[debug] 		=> https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.pom (2.3.2)
-[debug] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.pom
-[debug] 	[SUCCESSFUL ] org.jogamp.jogl#jogl;2.3.2!jogl.pom(pom.original) (1425ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\jogl\2.3.2\jars\jogl.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.jar
-[debug] 	found org.jogamp.jogl#jogl;2.3.2 in public
+[debug] sbt-chain: module revision found in cache: org.jogamp.jogl#jogl;2.3.2
+[debug] 	found org.jogamp.jogl#jogl;2.3.2 in sbt-chain
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#jogl;2.3.2 [compile->compile(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#jogl;2.3.2 [compile->runtime(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#jogl;2.3.2 [compile->compile]
@@ -142,21 +60,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.jogamp.jogl#jogl-all;2.3.2 ...
 [debug] sbt-chain: Checking cache for: dependency: org.jogamp.jogl#jogl-all;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[info] Resolving org.jogamp.jogl#jogl-all;2.3.2 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.jogamp.jogl#jogl-all;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\jogl-all\2.3.2\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.jogamp.jogl#jogl-all;2.3.2
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.pom
-[debug] 	public: found md file for org.jogamp.jogl#jogl-all;2.3.2
-[debug] 		=> https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.pom (2.3.2)
-[debug] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.pom
-[debug] 	[SUCCESSFUL ] org.jogamp.jogl#jogl-all;2.3.2!jogl-all.pom(pom.original) (1357ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\jogl-all\2.3.2\jars\jogl-all.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.jar
-[debug] 	found org.jogamp.jogl#jogl-all;2.3.2 in public
+[debug] sbt-chain: module revision found in cache: org.jogamp.jogl#jogl-all;2.3.2
+[debug] 	found org.jogamp.jogl#jogl-all;2.3.2 in sbt-chain
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#jogl-all;2.3.2 [compile->compile(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#jogl-all;2.3.2 [compile->runtime(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#jogl-all;2.3.2 [compile->compile]
@@ -165,42 +70,16 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.jogamp.jogl#newt-main;2.3.2 ...
 [debug] sbt-chain: Checking cache for: dependency: org.jogamp.jogl#newt-main;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[info] Resolving org.jogamp.jogl#newt-main;2.3.2 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.jogamp.jogl#newt-main;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\newt-main\2.3.2\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.jogamp.jogl#newt-main;2.3.2
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.pom
-[debug] 	public: found md file for org.jogamp.jogl#newt-main;2.3.2
-[debug] 		=> https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.pom (2.3.2)
-[debug] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.pom
-[debug] 	[SUCCESSFUL ] org.jogamp.jogl#newt-main;2.3.2!newt-main.pom(pom.original) (1307ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\newt-main\2.3.2\jars\newt-main.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.jar
-[debug] 	found org.jogamp.jogl#newt-main;2.3.2 in public
+[debug] sbt-chain: module revision found in cache: org.jogamp.jogl#newt-main;2.3.2
+[debug] 	found org.jogamp.jogl#newt-main;2.3.2 in sbt-chain
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#newt-main;2.3.2 [compile->compile(*)]
 [debug] == resolving dependencies org.jogamp.jogl#newt-main;2.3.2->org.jogamp.jogl#newt;2.3.2 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.jogamp.jogl#newt;2.3.2 ...
-[debug] sbt-chain: Checking cache for: MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]},dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]})
-[info] Resolving org.jogamp.jogl#newt;2.3.2 ...
-[debug] sbt-chain-delegate: Checking cache for: MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]},dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]})
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\newt\2.3.2\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.jogamp.jogl#newt;2.3.2
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.pom
-[debug] 	public: found md file for org.jogamp.jogl#newt;2.3.2
-[debug] 		=> https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.pom (2.3.2)
-[debug] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.pom
-[debug] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.pom(pom.original) (652ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\newt\2.3.2\jars\newt.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.jar
-[debug] 	found org.jogamp.jogl#newt;2.3.2 in public
+[debug] sbt-chain: Checking cache for: dependency: org.jogamp.jogl#newt;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.jogamp.jogl#newt;2.3.2
+[debug] 	found org.jogamp.jogl#newt;2.3.2 in sbt-chain
 [debug] == resolving dependencies org.jogamp.jogl#newt-main;2.3.2->org.jogamp.jogl#newt;2.3.2 [compile->compile(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#newt-main;2.3.2 [compile->runtime(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#newt-main;2.3.2 [compile->compile]
@@ -211,42 +90,16 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.jogamp.jogl#nativewindow-main;2.3.2 ...
 [debug] sbt-chain: Checking cache for: dependency: org.jogamp.jogl#nativewindow-main;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[info] Resolving org.jogamp.jogl#nativewindow-main;2.3.2 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.jogamp.jogl#nativewindow-main;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\nativewindow-main\2.3.2\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.jogamp.jogl#nativewindow-main;2.3.2
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.pom
-[debug] 	public: found md file for org.jogamp.jogl#nativewindow-main;2.3.2
-[debug] 		=> https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.pom (2.3.2)
-[debug] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.pom
-[debug] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow-main;2.3.2!nativewindow-main.pom(pom.original) (957ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\nativewindow-main\2.3.2\jars\nativewindow-main.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.jar
-[debug] 	found org.jogamp.jogl#nativewindow-main;2.3.2 in public
+[debug] sbt-chain: module revision found in cache: org.jogamp.jogl#nativewindow-main;2.3.2
+[debug] 	found org.jogamp.jogl#nativewindow-main;2.3.2 in sbt-chain
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#nativewindow-main;2.3.2 [compile->compile(*)]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.jogamp.jogl#nativewindow;2.3.2 ...
-[debug] sbt-chain: Checking cache for: MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]},dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]})
-[info] Resolving org.jogamp.jogl#nativewindow;2.3.2 ...
-[debug] sbt-chain-delegate: Checking cache for: MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(MergedDescriptors(dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]},dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}),dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]})
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\nativewindow\2.3.2\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.jogamp.jogl#nativewindow;2.3.2
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.pom
-[debug] 	public: found md file for org.jogamp.jogl#nativewindow;2.3.2
-[debug] 		=> https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.pom (2.3.2)
-[debug] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.pom
-[debug] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.pom(pom.original) (722ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.jogamp.jogl\nativewindow\2.3.2\jars\nativewindow.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.jar
-[debug] 	found org.jogamp.jogl#nativewindow;2.3.2 in public
+[debug] sbt-chain: Checking cache for: dependency: org.jogamp.jogl#nativewindow;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.jogamp.jogl#nativewindow;2.3.2
+[debug] 	found org.jogamp.jogl#nativewindow;2.3.2 in sbt-chain
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [compile->compile(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#nativewindow-main;2.3.2 [compile->runtime(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#nativewindow-main;2.3.2 [compile->compile]
@@ -262,25 +115,25 @@
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#newt-main;2.3.2 [runtime->compile]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#nativewindow-main;2.3.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#nativewindow-main;2.3.2 [runtime->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
 [debug] resolving dependencies for configuration 'runtime'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [runtime]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [runtime]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.gluegen#gluegen-rt-main;2.3.2 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
@@ -345,30 +198,30 @@
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#nativewindow-main;2.3.2 [runtime->compile]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [runtime->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
 [debug] resolving dependencies for configuration 'test'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [test]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [runtime]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [test]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [runtime]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.gluegen#gluegen-rt-main;2.3.2 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
@@ -449,15 +302,15 @@
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#nativewindow-main;2.3.2 [runtime->compile]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [runtime->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
 [debug] resolving dependencies for configuration 'provided'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [provided]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [provided]
 [debug] resolving dependencies for configuration 'optional'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [optional]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [optional]
 [debug] resolving dependencies for configuration 'compile-internal'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [compile-internal]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [compile-internal]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
@@ -466,10 +319,10 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
@@ -478,8 +331,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.gluegen#gluegen-rt-main;2.3.2 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
@@ -576,14 +429,14 @@
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#nativewindow-main;2.3.2 [runtime->compile]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [runtime->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [optional]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [provided]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [optional]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [provided]
 [debug] resolving dependencies for configuration 'runtime-internal'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [runtime-internal]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [runtime]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [runtime-internal]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [runtime]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
@@ -592,10 +445,10 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
@@ -604,8 +457,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.gluegen#gluegen-rt-main;2.3.2 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
@@ -702,14 +555,14 @@
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#nativewindow-main;2.3.2 [runtime->compile]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [runtime->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [optional]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [optional]
 [debug] resolving dependencies for configuration 'test-internal'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [test-internal]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [test]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [runtime]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [test-internal]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [test]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [runtime]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
@@ -722,10 +575,10 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
@@ -738,8 +591,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->compile]
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.gluegen#gluegen-rt-main;2.3.2 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
@@ -868,41 +721,28 @@
 [debug] == resolving dependencies org.processing#core;3.2.3->org.jogamp.jogl#nativewindow-main;2.3.2 [runtime->compile]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.jogamp.jogl#nativewindow-main;2.3.2->org.jogamp.jogl#nativewindow;2.3.2 [runtime->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [optional]
-[debug] == resolving dependencies for default#starships_2.12;0.1 [provided]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.processing#core;3.2.3 [compile->master]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [optional]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [provided]
 [debug] resolving dependencies for configuration 'plugin'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [plugin]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [plugin]
 [debug] resolving dependencies for configuration 'sources'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [sources]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [sources]
 [debug] resolving dependencies for configuration 'docs'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [docs]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [docs]
 [debug] resolving dependencies for configuration 'pom'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [pom]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [pom]
 [debug] resolving dependencies for configuration 'scala-tool'
-[debug] == resolving dependencies for default#starships_2.12;0.1 [scala-tool]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->default]
+[debug] == resolving dependencies for starships#starships_2.12;0.1 [scala-tool]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->default]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.scala-lang#scala-compiler;2.12.3 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
-[info] Resolving org.scala-lang#scala-compiler;2.12.3 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.scala-lang#scala-compiler;2.12.3 {scala-tool=[default, optional(default)]}
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.scala-lang\scala-compiler\2.12.3\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.scala-lang#scala-compiler;2.12.3
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.pom
-[debug] 	public: found md file for org.scala-lang#scala-compiler;2.12.3
-[debug] 		=> https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.pom (2.12.3)
-[debug] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.pom
-[debug] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.12.3!scala-compiler.pom(pom.original) (1288ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.scala-lang\scala-compiler\2.12.3\jars\scala-compiler.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.jar
-[debug] 	found org.scala-lang#scala-compiler;2.12.3 in public
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->compile]
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.12.3
+[debug] 	found org.scala-lang#scala-compiler;2.12.3 in sbt-chain
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.3->org.scala-lang#scala-library;2.12.3 [compile->master(compile)]
@@ -941,21 +781,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.3 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.3 {scala-tool=[default, optional(default)], compile=[default(compile)]}
 [info] Resolving org.scala-lang#scala-reflect;2.12.3 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[info] Resolving org.scala-lang#scala-reflect;2.12.3 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.scala-lang\scala-reflect\2.12.3\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.scala-lang#scala-reflect;2.12.3
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.pom
-[debug] 	public: found md file for org.scala-lang#scala-reflect;2.12.3
-[debug] 		=> https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.pom (2.12.3)
-[debug] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.pom
-[debug] 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.12.3!scala-reflect.pom(pom.original) (832ms)
-[debug] 		tried C:\Users\Agustin\.ivy2\local\org.scala-lang\scala-reflect\2.12.3\jars\scala-reflect.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.jar
-[debug] 	found org.scala-lang#scala-reflect;2.12.3 in public
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.12.3
+[debug] 	found org.scala-lang#scala-reflect;2.12.3 in sbt-chain
 [debug] 	[2.12.3] org.scala-lang#scala-reflect;2.12.3
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.3->org.scala-lang#scala-reflect;2.12.3 [compile->compile(*)]
@@ -1020,12 +847,12 @@
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.3->org.scala-lang#scala-reflect;2.12.3 [runtime->compile]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.3->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.3->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->optional(default)]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->optional(default)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.3->jline#jline;2.14.4 [optional->master(compile)]
@@ -1048,383 +875,88 @@
 [debug] sbt-chain: module revision found in cache: jline#jline;2.14.4
 [debug] 	found jline#jline;2.14.4 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.3->jline#jline;2.14.4 [optional->compile(*)]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->default]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->runtime]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->compile]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->master]
-[debug] == resolving dependencies default#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->optional(default)]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->default]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->runtime]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->compile]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->master]
+[debug] == resolving dependencies starships#starships_2.12;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->optional(default)]
 [debug] ignoring unhandled DependencyDescriptorMediator: class sbt.IvyScala$OverrideScalaMediator
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.12.3!scala-library.jar (14426ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.jar
-[info] downloading https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/processing/core/3.2.3/core-3.2.3.jar
-[info] 	[SUCCESSFUL ] org.processing#core;3.2.3!core.jar (3393ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt-main;2.3.2!gluegen-rt-main.jar (958ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/jogl/2.3.2/jogl-2.3.2.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#jogl;2.3.2!jogl.jar (1996ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#jogl-all;2.3.2!jogl-all.jar (8923ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt-main/2.3.2/newt-main-2.3.2.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt-main;2.3.2!newt-main.jar (712ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow-main/2.3.2/nativewindow-main-2.3.2.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow-main;2.3.2!nativewindow-main.jar (644ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-i586.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-i586.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-i586.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-i586.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-i586.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (845ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6hf.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6hf.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6hf.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6hf.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6hf.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (870ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-armv6.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-armv6.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-armv6.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-armv6.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-armv6.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (813ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-amd64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-amd64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-amd64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-amd64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-amd64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (829ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-amd64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-amd64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-amd64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-amd64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-amd64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (797ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-aarch64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-aarch64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-aarch64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-aarch64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-aarch64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (803ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-macosx-universal.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-macosx-universal.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-macosx-universal.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-macosx-universal.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-macosx-universal.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (1242ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-amd64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-amd64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-amd64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-amd64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-amd64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (917ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (1800ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-i586.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-i586.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-i586.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-i586.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-i586.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (903ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (1437ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-i586.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-i586.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-i586.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-i586.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-i586.jar
-[info] 	[SUCCESSFUL ] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar (808ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-android-aarch64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-android-aarch64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-android-aarch64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-android-aarch64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-android-aarch64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (1281ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-solaris-amd64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-solaris-amd64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-solaris-amd64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-solaris-amd64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-solaris-amd64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (829ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-bcm-vc.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-bcm-vc.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-bcm-vc.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-bcm-vc.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-bcm-vc.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (1420ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-android-armv6.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-android-armv6.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-android-armv6.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-android-armv6.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-android-armv6.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (804ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-i586.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-i586.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-i586.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-i586.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-i586.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (889ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (1133ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-windows-i586.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-windows-i586.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-windows-i586.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-windows-i586.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-windows-i586.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (886ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-amd64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-amd64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-amd64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-amd64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-amd64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (854ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-ogl.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-ogl.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-ogl.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-ogl.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-ogl.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (862ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-android.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-android.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-android.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-android.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-android.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (891ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-armv6hf.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-armv6hf.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-armv6hf.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-armv6hf.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-armv6hf.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (827ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-event.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-event.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-event.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-event.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-event.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (971ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-osx.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-osx.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-osx.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-osx.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-osx.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (891ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-bcm-old.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-bcm-old.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-bcm-old.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-bcm-old.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-bcm-old.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (805ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-linux.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-linux.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-linux.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-linux.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-linux.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (873ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-solaris-i586.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-solaris-i586.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-solaris-i586.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-solaris-i586.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-solaris-i586.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (831ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-win.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-win.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-win.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-win.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-win.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (951ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-windows-amd64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-windows-amd64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-windows-amd64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-windows-amd64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-windows-amd64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (820ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-armv6.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-armv6.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-armv6.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-armv6.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-linux-armv6.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (890ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-intelgdl.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-intelgdl.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-intelgdl.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-intelgdl.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-intelgdl.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (817ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-macosx-universal.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-macosx-universal.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-macosx-universal.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-macosx-universal.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-natives-macosx-universal.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (940ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-kd.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-kd.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-kd.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-kd.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-kd.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (882ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-x11.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-x11.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-x11.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-x11.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/newt/2.3.2/newt-2.3.2-driver-x11.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#newt;2.3.2!newt.jar (820ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-x11.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-x11.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-x11.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-x11.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-x11.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (979ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-osx.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-osx.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-osx.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-osx.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-osx.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (823ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-solaris-amd64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-solaris-amd64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-solaris-amd64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-solaris-amd64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-solaris-amd64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (846ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-macosx-universal.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-macosx-universal.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-macosx-universal.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-macosx-universal.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-macosx-universal.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (846ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-windows-amd64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-windows-amd64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-windows-amd64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-windows-amd64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-windows-amd64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (883ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-armv6.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-armv6.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-armv6.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-armv6.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-armv6.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (828ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-android-aarch64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-android-aarch64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-android-aarch64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-android-aarch64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-android-aarch64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (809ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-win.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-win.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-win.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-win.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-os-win.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (981ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-armv6hf.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-armv6hf.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-armv6hf.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-armv6hf.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-armv6hf.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (849ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-i586.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-i586.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-i586.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-i586.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-i586.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (830ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-solaris-i586.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-solaris-i586.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-solaris-i586.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-solaris-i586.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-solaris-i586.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (825ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-amd64.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-amd64.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-amd64.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-amd64.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-linux-amd64.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (835ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (841ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-windows-i586.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-windows-i586.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-windows-i586.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-windows-i586.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-windows-i586.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (832ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-android-armv6.jar
-[info] downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-android-armv6.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-android-armv6.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-android-armv6.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/jogamp/jogl/nativewindow/2.3.2/nativewindow-2.3.2-natives-android-armv6.jar
-[info] 	[SUCCESSFUL ] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar (821ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.12.3!scala-compiler.jar (25260ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.12.3!scala-reflect.jar (9439ms)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.3!scala-library.jar
+[debug] 	[NOT REQUIRED] org.processing#core;3.2.3!core.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt-main;2.3.2!gluegen-rt-main.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#jogl;2.3.2!jogl.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#jogl-all;2.3.2!jogl-all.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt-main;2.3.2!newt-main.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow-main;2.3.2!nativewindow-main.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.gluegen#gluegen-rt;2.3.2!gluegen-rt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#newt;2.3.2!newt.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.jogamp.jogl#nativewindow;2.3.2!nativewindow.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.3!scala-compiler.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.3!scala-reflect.jar
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.4!jline.jar
-[debug] :: resolution report :: resolve 29114ms :: artifacts dl 112027ms
-[debug] 	report for default#starships_2.12;0.1 compile produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-compile.xml
-[debug] 	report for default#starships_2.12;0.1 runtime produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-runtime.xml
-[debug] 	report for default#starships_2.12;0.1 test produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-test.xml
-[debug] 	report for default#starships_2.12;0.1 provided produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-provided.xml
-[debug] 	report for default#starships_2.12;0.1 optional produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-optional.xml
-[debug] 	report for default#starships_2.12;0.1 compile-internal produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-compile-internal.xml
-[debug] 	report for default#starships_2.12;0.1 runtime-internal produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-runtime-internal.xml
-[debug] 	report for default#starships_2.12;0.1 test-internal produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-test-internal.xml
-[debug] 	report for default#starships_2.12;0.1 plugin produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-plugin.xml
-[debug] 	report for default#starships_2.12;0.1 sources produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-sources.xml
-[debug] 	report for default#starships_2.12;0.1 docs produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-docs.xml
-[debug] 	report for default#starships_2.12;0.1 pom produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-pom.xml
-[debug] 	report for default#starships_2.12;0.1 scala-tool produced in C:\Users\Agustin\repos\starships\target\scala-2.12\resolution-cache\reports\default-starships_2.12-scala-tool.xml
-[debug] 	resolve done (29114ms resolve - 112027ms download)
+[debug] :: resolution report :: resolve 498ms :: artifacts dl 77ms
+[debug] 	report for starships#starships_2.12;0.1 compile produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-compile.xml
+[debug] 	report for starships#starships_2.12;0.1 runtime produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-runtime.xml
+[debug] 	report for starships#starships_2.12;0.1 test produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-test.xml
+[debug] 	report for starships#starships_2.12;0.1 provided produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-provided.xml
+[debug] 	report for starships#starships_2.12;0.1 optional produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-optional.xml
+[debug] 	report for starships#starships_2.12;0.1 compile-internal produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-compile-internal.xml
+[debug] 	report for starships#starships_2.12;0.1 runtime-internal produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-runtime-internal.xml
+[debug] 	report for starships#starships_2.12;0.1 test-internal produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-test-internal.xml
+[debug] 	report for starships#starships_2.12;0.1 plugin produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-plugin.xml
+[debug] 	report for starships#starships_2.12;0.1 sources produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-sources.xml
+[debug] 	report for starships#starships_2.12;0.1 docs produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-docs.xml
+[debug] 	report for starships#starships_2.12;0.1 pom produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-pom.xml
+[debug] 	report for starships#starships_2.12;0.1 scala-tool produced in C:\Users\AlumnosFI\Desktop\spaceship-master\target\scala-2.12\resolution-cache\reports\starships-starships_2.12-scala-tool.xml
+[debug] 	resolve done (498ms resolve - 77ms download)
 [info] Done updating.

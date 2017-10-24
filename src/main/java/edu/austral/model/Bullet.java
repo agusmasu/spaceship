@@ -13,13 +13,14 @@ public class Bullet extends AbstractModel {
     private float speed;
     private float damage;
 
-    public Bullet(Vector2 position, float speed, KeyDirection direction, PApplet graphics) {
-        super(position, new Rectangle(100,100), "resources/bullet.jpg", "Bullet", graphics);
+    public Bullet(Vector2 position, float speed, KeyDirection direction, PApplet graphics, float damage) {
+        super(position, new Rectangle(100,100), "resources/bullet.png", "Bullet", graphics);
         this.speed = speed;
         this.direction = direction;
         width = 10;
         height = 10;
         isAlive = true;
+        this.damage = damage;
     }
 
     public void move(){
@@ -43,10 +44,6 @@ public class Bullet extends AbstractModel {
     @Override
     public void collisionedWith(AbstractModel collisionable) {
         if(collisionable.getType() == "Asteroid") kill();
-    }
-
-    public float getSpeed() {
-        return speed;
     }
 
     public float getDamage() {

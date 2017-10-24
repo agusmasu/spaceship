@@ -1,6 +1,7 @@
 package edu.austral.controller;
 
 import edu.austral.model.AbstractModel;
+import edu.austral.model.Board;
 import edu.austral.model.Bullet;
 
 import java.awt.*;
@@ -23,13 +24,13 @@ public class BulletController {
     }
 
     //Added method
-    public void update(float time, float maxX, float maxY){
+    public void update(float time, Board board){
         for (int i = 0; i< bulletsOnScreen.size(); i++){
 
             Bullet bullet = bulletsOnScreen.get(i);
 
-            //if(bullet.getPosition().x() > maxX) bullet.kill();
-            //if(bullet.getPosition().y() > maxY) bullet.kill();
+            if(bullet.getPosition().x() > board.getWidth() || bullet.getPosition().x() < 0) bullet.kill();
+            if(bullet.getPosition().y() >  board.getHeight() || bullet.getPosition().y() < 0) bullet.kill();
 
             if(!bullet.isAlive()) bulletsOnScreen.remove(bullet);
 
@@ -39,10 +40,6 @@ public class BulletController {
 
     public void addBullet(Bullet bullet){
         bulletsOnScreen.add(bullet);
-    }
-
-    public void destroy(Bullet bullet){
-        if (bulletsOnScreen.contains(bullet)) bulletsOnScreen.remove(bullet);
     }
 
     public List<AbstractModel> getBulletsOnScreen(){

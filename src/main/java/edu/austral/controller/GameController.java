@@ -11,6 +11,7 @@ import edu.austral.util.Collisionable;
 import edu.austral.view.UIManager;
 import processing.core.PApplet;
 
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +26,7 @@ public class GameController {
     public UIManager uiManager;
     private Board board;
     private CollisionEngine engine;
+    private boolean isPaused = false;
 
     public void setBoard(Board board) {
         this.board = board;
@@ -38,12 +40,15 @@ public class GameController {
 
     //Main update
     public void update(float time, PApplet graphics){
-        //Random to generate asteroids
+
+        if(isPaused){
+            return;
+        }
 
         asteroidController.update(board, graphics);
         playerController.update(time, board);
-        bulletController.update(time, board.getWidth(), board.getHeight());
-        dropController.update(graphics);
+        bulletController.update(time, board);
+        dropController.update(graphics, board);
 
         List<AbstractModel> toDraw = new ArrayList<>();
         toDraw.addAll(asteroidController.getAsteroidsOnScreen());
@@ -62,6 +67,19 @@ public class GameController {
 
     //Occurs when a key is pressed
     public void onKeyPressed(int code, PApplet graphics){
+
+
+        System.out.println(KeyEvent.VK_P);
+        System.out.println(code);
+        if(code == KeyEvent.VK_P){
+            System.out.println("LALA");
+            if(isPaused) resume(graphics);
+            else pause(graphics);
+            return;
+        }
+
+        if(isPaused) return;
+
         Player one = playerController.getPlayer(1);
         //Player two = playerController.getPlayer(2);
 
@@ -97,8 +115,20 @@ public class GameController {
     private void shoot(Player player, PApplet graphics){
         if (!playerController.getPlayerHistory().contains(player)) return;
         System.out.println("Method shoot");
-        Bullet bullet = new Bullet(player.getSpaceship().getPosition(), 10, player.getSpaceship().getDirection(), graphics);
+        Bullet bullet = new Bullet(player.getSpaceship().getPosition(), 10, player.getSpaceship().getDirection(), graphics, player.getSpaceship().getStandardWeapon().getDamage());
         bulletController.addBullet(bullet);
+    }
+
+    public void pause(PApplet graphics){
+        graphics.pause();
+        isPaused = true;
+        System.out.println("PAUSED");
+    }
+
+    public void resume(PApplet graphics){
+        graphics.resume();
+        isPaused = false;
+        System.out.println("RESUME");
     }
 
 }

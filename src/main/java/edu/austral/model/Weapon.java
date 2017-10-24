@@ -7,6 +7,12 @@ import java.util.List;
  */
 public class Weapon {
     private float damage;
-    private List<Float> shots;
 
+    public Weapon(float damage) {
+        this.damage = damage;
+    }
+
+    public float getDamage() {
+        return damage;
+    }
 }

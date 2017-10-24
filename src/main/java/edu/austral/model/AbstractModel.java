@@ -86,10 +86,6 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
         return isAlive;
     }
 
-    public void setShape(Shape shape) {
-        this.shape = shape;
-    }
-
     public KeyDirection getDirection() {
         return direction;
     }
