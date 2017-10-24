@@ -1,6 +1,7 @@
 package edu.austral.model;
 
 import edu.austral.util.Vector2;
+import processing.core.PApplet;
 
 import java.awt.*;
 
@@ -11,8 +12,8 @@ public class WeaponDrop extends AbstractModel {
     private static final String imagePath = "";
     private Weapon weapon;
 
-    public WeaponDrop(Vector2 position, Shape shape, Weapon weapon) {
-        super(position, shape, imagePath, "WeaponDrop");
+    public WeaponDrop(Vector2 position, Shape shape, Weapon weapon, PApplet graphics) {
+        super(position, shape, imagePath, "WeaponDrop", graphics);
         this.weapon = weapon;
     }
 

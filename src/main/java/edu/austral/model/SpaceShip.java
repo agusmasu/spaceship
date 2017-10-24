@@ -2,6 +2,7 @@ package edu.austral.model;
 
 import edu.austral.model.key.KeyDirection;
 import edu.austral.util.Vector2;
+import processing.core.PApplet;
 
 import java.awt.*;
 
@@ -17,9 +18,9 @@ public class SpaceShip extends AbstractModel {
     private Weapon standardWeapon;
     private int primaryWeaponAmmo;
 
-    public SpaceShip(Vector2 position, Weapon standart) {
+    public SpaceShip(Vector2 position, Weapon standart, PApplet graphics) {
         super(position, new Rectangle(Math.round(position.x()), Math.round(position.y()), 100, 100),
-                "resources/spaceship.png", "SpaceShip");
+                "resources/spaceship.png", "SpaceShip", graphics);
         standardWeapon = standart;
         health = 100;
         width = 30;
@@ -70,7 +71,7 @@ public class SpaceShip extends AbstractModel {
     public void collisionedWith(AbstractModel collisionable) {
         if (collisionable.getType() == "Asteroid"){
             health -= 20;
-            System.out.println("Asteroid collided");
+            System.out.println("Asteroid collided, HEALTH: "+health);
         }
         else if (collisionable.getType() == "Bullet"){
             health -= ((Bullet)collisionable).getDamage();

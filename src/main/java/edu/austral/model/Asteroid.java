@@ -1,6 +1,7 @@
 package edu.austral.model;
 
 import edu.austral.util.Vector2;
+import processing.core.PApplet;
 
 import java.awt.*;
 
@@ -11,8 +12,8 @@ public class Asteroid extends AbstractModel {
     private float health;
     private float rotation;
 
-    public Asteroid(Vector2 position) {
-        super(position, new Rectangle(Math.round(position.x()), Math.round(position.y()), 40, 40) ,"resources/asteroid.png", "Asteroid");
+    public Asteroid(Vector2 position, PApplet graphics) {
+        super(position, new Rectangle(Math.round(position.x()), Math.round(position.y()), 40, 40) ,"resources/asteroid.png", "Asteroid", graphics);
         width = 30;
         height = 30;
         autoUpdateShape();
@@ -20,7 +21,7 @@ public class Asteroid extends AbstractModel {
 
     @Override
     public void collisionedWith(AbstractModel collisionable) {
-
+        kill();
     }
 
     private void autoUpdateShape(){

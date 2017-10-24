@@ -2,6 +2,7 @@ package edu.austral.model;
 
 import edu.austral.model.key.KeyDirection;
 import edu.austral.util.Vector2;
+import processing.core.PApplet;
 
 import java.awt.*;
 
@@ -12,8 +13,8 @@ public class Bullet extends AbstractModel {
     private float speed;
     private float damage;
 
-    public Bullet(Vector2 position, float speed, KeyDirection direction) {
-        super(position, new Rectangle(100,100), "resources/bullet.jpg", "Bullet");
+    public Bullet(Vector2 position, float speed, KeyDirection direction, PApplet graphics) {
+        super(position, new Rectangle(100,100), "resources/bullet.jpg", "Bullet", graphics);
         this.speed = speed;
         this.direction = direction;
         width = 10;

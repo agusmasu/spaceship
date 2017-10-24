@@ -2,6 +2,7 @@ package edu.austral.model;
 
 import edu.austral.model.AbstractModel;
 import edu.austral.util.Vector2;
+import processing.core.PApplet;
 
 import java.awt.*;
 
@@ -13,8 +14,8 @@ public class PowerUp extends AbstractModel {
     private static final String imagePath = "";
     private float speedMultiplicator;
 
-    public PowerUp(Vector2 position, Shape shape, float speedMultiplicator) {
-        super(position, shape, imagePath, "PowerUp");
+    public PowerUp(Vector2 position, Shape shape, float speedMultiplicator, PApplet graphics) {
+        super(position, shape, imagePath, "PowerUp", graphics);
         this.speedMultiplicator = speedMultiplicator;
 
     }

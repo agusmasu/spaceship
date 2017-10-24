@@ -3,6 +3,8 @@ package edu.austral.model;
 import edu.austral.model.key.KeyDirection;
 import edu.austral.util.Collisionable;
 import edu.austral.util.Vector2;
+import processing.core.PApplet;
+import processing.core.PImage;
 
 import java.awt.*;
 
@@ -17,6 +19,7 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
     private String imagePath;
     protected boolean isAlive;
     protected KeyDirection direction;
+    private PImage img;
 
     public int getWidth() {
         return width;
@@ -28,22 +31,24 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
 
     protected int width, height;
 
-    public AbstractModel(Vector2 position, Shape shape, String imagePath, String type, KeyDirection direction) {
+    public AbstractModel(Vector2 position, Shape shape, String imagePath, String type, KeyDirection direction, PApplet graphics) {
         this.position = position;
         this.shape = shape;
         this.imagePath = imagePath;
         this.type = type;
         isAlive = true;
         this.direction = direction;
+        img = graphics.loadImage(imagePath);
     }
 
-    public AbstractModel(Vector2 position, Shape shape, String imagePath, String type) {
+    public AbstractModel(Vector2 position, Shape shape, String imagePath, String type, PApplet graphics) {
         this.position = position;
         this.shape = shape;
         this.imagePath = imagePath;
         this.type = type;
         isAlive = true;
         this.direction = KeyDirection.RIGHT;
+        img = graphics.loadImage(imagePath);
     }
 
     public Vector2 getPosition() {
@@ -91,5 +96,9 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
 
     public void setDirection(KeyDirection direction) {
         this.direction = direction;
+    }
+
+    public PImage getImg() {
+        return img;
     }
 }

@@ -9,6 +9,7 @@ import edu.austral.model.key.KeyDirection;
 import edu.austral.util.CollisionEngine;
 import edu.austral.util.Collisionable;
 import edu.austral.view.UIManager;
+import processing.core.PApplet;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,11 +36,10 @@ public class GameController {
     }
 
     //Main update
-    public void update(float time){
+    public void update(float time, PApplet graphics){
         //Random to generate asteroids
-        if (System.currentTimeMillis()%10 == 0) asteroidController.generateRandomASteroid(board.getWidth(), board.getHeight());
 
-        asteroidController.update();
+        asteroidController.update(board, graphics);
         playerController.update(time, board);
         bulletController.update(time, board.getWidth(), board.getHeight());
 
@@ -53,17 +53,19 @@ public class GameController {
         uiManager.setToDraw(toDraw);
 
         engine.checkCollisions(uiManager.getToDraw());
+
+        graphics.text("Score Player 1: "+ playerController.getPlayer(1).getScore(), 0, 10);
     }
 
     //Occurs when a key is pressed
-    public void onKeyPressed(int code){
+    public void onKeyPressed(int code, PApplet graphics){
         Player one = playerController.getPlayer(1);
         //Player two = playerController.getPlayer(2);
 
         KeyDictionary oneDict = one.getKeys();
         //KeyDictionary twoDict = two.getKeys();
 
-        if(code == oneDict.getShoot()) shoot(one);
+        if(code == oneDict.getShoot()) shoot(one, graphics);
 
         //Moving player one spaceship
         one.getSpaceship().move(getIntentionFromKey(code, oneDict));
@@ -89,9 +91,9 @@ public class GameController {
         engine = new CollisionEngine();
     }
 
-    private void shoot(Player player){
+    private void shoot(Player player, PApplet graphics){
         if (!playerController.getPlayerHistory().contains(player)) return;
-        Bullet bullet = new Bullet(player.getSpaceship().getPosition(), 10, player.getSpaceship().getDirection());
+        Bullet bullet = new Bullet(player.getSpaceship().getPosition(), 10, player.getSpaceship().getDirection(), graphics);
         bulletController.addBullet(bullet);
     }
 

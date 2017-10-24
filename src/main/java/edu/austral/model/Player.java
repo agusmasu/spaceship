@@ -40,5 +40,7 @@ public class Player {
         return name;
     }
 
-
+    public float getScore() {
+        return score;
+    }
 }

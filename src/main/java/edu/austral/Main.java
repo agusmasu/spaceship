@@ -13,13 +13,13 @@ import static java.awt.event.KeyEvent.*;
 
 public class Main extends GameFramework {
     private static GameController gameController = GameController.getInstance();
+    private boolean started = false;
 
     public static void main(String args[]) {
         PApplet.main("edu.austral.Main");
-        defaultSettings();
     }
 
-    private static void defaultSettings(){
+    private static void defaultSettings(PApplet graphics){
         gameController.setBoard(new Board(500, 500));
 
         KeyDictionary playerOneDict = new KeyDictionary(VK_W, KeyEvent.VK_S, KeyEvent.VK_D, VK_A, KeyEvent.VK_SHIFT);
@@ -29,7 +29,7 @@ public class Main extends GameFramework {
         gameController.playerController.setFirstPlayer(one);
 
         Weapon weapon = new Weapon();
-        SpaceShip ss = new SpaceShip(new Vector2(0,0), weapon);
+        SpaceShip ss = new SpaceShip(new Vector2(0,0), weapon, graphics);
 
         one.setSpaceship(ss);
         gameController.playerController.createPlayer(one);
@@ -37,18 +37,23 @@ public class Main extends GameFramework {
     }
 
     @Override public void draw(float time, PApplet graphics) {
+        if(!started){
+            started = true;
+            defaultSettings(graphics);
+        }
+
         System.out.println("Running at "+frameRate + "FPS");
-        gameController.update(time);
+        gameController.update(time, graphics);
         List<AbstractModel> models = gameController.uiManager.getToDraw();
 
         gameController.uiManager.draw(graphics);
 
-        image(loadImage("resources/bullet.jpg"), 10, 10 , 10, 10);
+        //image(loadImage("resources/bullet.jpg"), 10, 10 , 10, 10);
 
     }
 
     private void testing(){
-        this.gameController.onKeyPressed(VK_D);
+        this.gameController.onKeyPressed(VK_D, this);
     }
 
     @Override
@@ -62,7 +67,7 @@ public class Main extends GameFramework {
         System.out.println("hola");
 
         System.out.println(keyCode);
-        gameController.onKeyPressed(keyCode);
+        gameController.onKeyPressed(keyCode, this);
 
         draw();
     }
