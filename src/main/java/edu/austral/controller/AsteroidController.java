@@ -3,6 +3,7 @@ package edu.austral.controller;
 import edu.austral.model.AbstractModel;
 import edu.austral.model.Asteroid;
 import edu.austral.model.Board;
+import edu.austral.model.key.KeyDirection;
 import edu.austral.util.Vector2;
 import processing.core.PApplet;
 
@@ -35,9 +36,29 @@ public class AsteroidController {
     public void generateRandomASteroid(int boundX, int boundY, PApplet graphics){
         float randomX = (float)Math.random()*boundX;
         float randomY = (float)Math.random()*boundY;
-        Asteroid asteroid = new Asteroid(new Vector2(randomX, randomY), graphics);
+        //Asteroid asteroid = new Asteroid(new Vector2(randomX, randomY), graphics);
+        int option = (int) (Math.random()*4);
+        Asteroid asteroid;
+        switch (option){
+            case 0:
+                asteroid = new Asteroid(new Vector2(randomX, randomY), graphics, KeyDirection.UP);
+                break;
+            case 1:
+                asteroid = new Asteroid(new Vector2(randomX, randomY), graphics, KeyDirection.DOWN);
+                break;
+            case 2:
+                asteroid = new Asteroid(new Vector2(randomX, randomY), graphics, KeyDirection.RIGHT);
+                break;
+            case 3:
+                asteroid = new Asteroid(new Vector2(randomX, randomY), graphics, KeyDirection.LEFT);
+                break;
+            default:
+                asteroid = new Asteroid(new Vector2(randomX, randomY), graphics, KeyDirection.DOWN);
+                break;
+        }
         asteroidsOnScreen.add(asteroid);
-        //System.out.println("Created Ast at "+ randomX + ", "+randomY);
+
+
     }
 
     public void update(Board board, PApplet graphics){
@@ -47,6 +68,7 @@ public class AsteroidController {
         for (int i = 0; i< asteroidsOnScreen.size(); i++){
             Asteroid asteroid = asteroidsOnScreen.get(i);
             if(!asteroid.isAlive()) asteroidsOnScreen.remove(asteroid);
+            else asteroid.move();
         }
     }
 }
