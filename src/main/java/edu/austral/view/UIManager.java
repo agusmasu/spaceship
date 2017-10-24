@@ -2,6 +2,7 @@ package edu.austral.view;
 
 import edu.austral.model.AbstractModel;
 import processing.core.PApplet;
+import processing.core.PConstants;
 import processing.core.PImage;
 
 import java.util.ArrayList;
@@ -41,8 +42,9 @@ public class UIManager {
     }
 
     public void draw(PApplet game){
+        game.imageMode(PConstants.CENTER);
         if (img == null) img = game.loadImage("resources/spaceship.png");
-        System.out.println(toDraw.size());
+        //System.out.println(toDraw.size());
         for (AbstractModel model: toDraw){
             if (model.getType() == "Bullet") game.ellipse(model.getPosition().x(), model.getPosition().y(), model.getWidth(), model.getHeight());
             else{

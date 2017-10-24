@@ -13,6 +13,7 @@ public class SpaceShip extends AbstractModel {
     private float health;
     private float speed;
     private float rotation;
+    private PApplet graphica;
 
     private Weapon primaryWeapon;
     private Weapon standardWeapon;
@@ -25,6 +26,8 @@ public class SpaceShip extends AbstractModel {
         health = 100;
         width = 30;
         height = 30;
+        this.graphica = graphics;
+        speed = 1;
     }
 
     public float getHealth() {
@@ -52,18 +55,25 @@ public class SpaceShip extends AbstractModel {
     public void move(KeyDirection toMove){
         switch(toMove){
             case UP:
-                position = position.$plus(new Vector2(0, 5));
+                position = position.$plus(new Vector2(0, 5*speed));
                 break;
             case DOWN:
-                position = position.$plus(new Vector2(0, -5));
+                position = position.$plus(new Vector2(0, -5*speed));
                 break;
             case RIGHT:
-                position = position.$plus(new Vector2(5, 0));
+                position = position.$plus(new Vector2(5*speed, 0));
                 break;
             case LEFT:
-                position = position.$plus(new Vector2(-5, 1));
+                position = position.$plus(new Vector2(-5*speed, 0));
                 break;
         }
+        direction = toMove;
+        autoUpdateShape();
+    }
+
+    @Override
+    public void moveTo(float x, float y) {
+        super.moveTo(x, y);
         autoUpdateShape();
     }
 
@@ -72,10 +82,20 @@ public class SpaceShip extends AbstractModel {
         if (collisionable.getType() == "Asteroid"){
             health -= 20;
             System.out.println("Asteroid collided, HEALTH: "+health);
+            if (health <= 0){
+                isAlive = false;
+                graphica.text("PERDISTE", 0, 100);
+                graphica.stop();
+            }
         }
         else if (collisionable.getType() == "Bullet"){
             health -= ((Bullet)collisionable).getDamage();
         }
+        else if (collisionable.getType() == "PowerUp"){
+            PowerUp pu = (PowerUp) collisionable;
+            speed = speed * pu.getSpeedMultiplicator();
+        }
+
     }
 
     private void autoUpdateShape(){

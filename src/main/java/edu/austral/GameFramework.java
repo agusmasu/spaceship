@@ -14,6 +14,7 @@ public abstract class GameFramework extends PApplet {
 
     @Override public void setup() {
 
+        //background(loadImage("resources/spaceship.png"));
         clear();
     }
 

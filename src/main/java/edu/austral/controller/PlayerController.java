@@ -34,6 +34,8 @@ public class PlayerController {
         Player one = playerHistory.get(playerOneListPosition);
         Player two = playerHistory.get(playerTwoListPosition);
 
+        one.addScore(0.025f);
+
         if (!board.isInside(one.getSpaceship())){
             System.out.println("ITS OUTSIDE");
             one.getSpaceship().moveTo(0,0);

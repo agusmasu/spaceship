@@ -42,7 +42,6 @@ public class Main extends GameFramework {
             defaultSettings(graphics);
         }
 
-        System.out.println("Running at "+frameRate + "FPS");
         gameController.update(time, graphics);
         List<AbstractModel> models = gameController.uiManager.getToDraw();
 
@@ -63,10 +62,10 @@ public class Main extends GameFramework {
 
     @Override
     public void keyPressed() {
-        System.out.println("X: "+ gameController.playerController.getPlayer(1).getSpaceship().getPosition().x()+ ", Y: "+ gameController.playerController.getPlayer(1).getSpaceship().getPosition().y());
-        System.out.println("hola");
+        //System.out.println("X: "+ gameController.playerController.getPlayer(1).getSpaceship().getPosition().x()+ ", Y: "+ gameController.playerController.getPlayer(1).getSpaceship().getPosition().y());
+        //System.out.println("hola");
 
-        System.out.println(keyCode);
+        //System.out.println(keyCode);
         gameController.onKeyPressed(keyCode, this);
 
         draw();

@@ -11,11 +11,13 @@ import java.awt.*;
  */
 public class PowerUp extends AbstractModel {
 
-    private static final String imagePath = "";
+    private static final String imagePath = "resources/powerup.png";
     private float speedMultiplicator;
 
-    public PowerUp(Vector2 position, Shape shape, float speedMultiplicator, PApplet graphics) {
-        super(position, shape, imagePath, "PowerUp", graphics);
+    public PowerUp(Vector2 position, float speedMultiplicator, PApplet graphics) {
+        super(position, new Rectangle(Math.round(position.x()), Math.round(position.y()), 50, 50), imagePath, "PowerUp", graphics);
+        width = 50;
+        height = 50;
         this.speedMultiplicator = speedMultiplicator;
 
     }
@@ -23,5 +25,13 @@ public class PowerUp extends AbstractModel {
     @Override
     public void collisionedWith(AbstractModel collisionable) {
         kill();
+    }
+
+    private void autoUpdateShape(){
+        shape = new Rectangle(Math.round(position.x()), Math.round(position.y()), width, height);
+    }
+
+    public float getSpeedMultiplicator() {
+        return speedMultiplicator;
     }
 }

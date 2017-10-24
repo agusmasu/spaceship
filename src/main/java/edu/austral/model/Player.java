@@ -43,4 +43,8 @@ public class Player {
     public float getScore() {
         return score;
     }
+
+    public void addScore(float toAdd){
+        score += toAdd;
+    }
 }

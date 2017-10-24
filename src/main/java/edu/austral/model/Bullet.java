@@ -19,6 +19,7 @@ public class Bullet extends AbstractModel {
         this.direction = direction;
         width = 10;
         height = 10;
+        isAlive = true;
     }
 
     public void move(){
@@ -41,7 +42,7 @@ public class Bullet extends AbstractModel {
 
     @Override
     public void collisionedWith(AbstractModel collisionable) {
-        kill();
+        if(collisionable.getType() == "Asteroid") kill();
     }
 
     public float getSpeed() {

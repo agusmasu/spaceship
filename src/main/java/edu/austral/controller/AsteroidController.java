@@ -42,10 +42,11 @@ public class AsteroidController {
 
     public void update(Board board, PApplet graphics){
 
-        if (System.currentTimeMillis()%10 == 0) generateRandomASteroid(board.getWidth(), board.getHeight(), graphics);
+        if (graphics.frameCount % 200 == 0) generateRandomASteroid(board.getWidth(), board.getHeight(), graphics);
 
-        for(Asteroid aste: asteroidsOnScreen){
-            if(!aste.isAlive()) asteroidsOnScreen.remove(aste);
+        for (int i = 0; i< asteroidsOnScreen.size(); i++){
+            Asteroid asteroid = asteroidsOnScreen.get(i);
+            if(!asteroid.isAlive()) asteroidsOnScreen.remove(asteroid);
         }
     }
 }

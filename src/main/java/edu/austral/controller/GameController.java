@@ -21,6 +21,7 @@ public class GameController {
     public PlayerController playerController;
     public AsteroidController asteroidController;
     public BulletController bulletController = BulletController.getInstance();
+    public DropController dropController = DropController.getInstance();
     public UIManager uiManager;
     private Board board;
     private CollisionEngine engine;
@@ -42,11 +43,13 @@ public class GameController {
         asteroidController.update(board, graphics);
         playerController.update(time, board);
         bulletController.update(time, board.getWidth(), board.getHeight());
+        dropController.update(graphics);
 
         List<AbstractModel> toDraw = new ArrayList<>();
         toDraw.addAll(asteroidController.getAsteroidsOnScreen());
         toDraw.addAll(playerController.getSpaceShips());
         toDraw.addAll(bulletController.getBulletsOnScreen());
+        toDraw.addAll(dropController.getAllPowerUps());
 
         //Adds alll lists to UIManager
 
@@ -93,6 +96,7 @@ public class GameController {
 
     private void shoot(Player player, PApplet graphics){
         if (!playerController.getPlayerHistory().contains(player)) return;
+        System.out.println("Method shoot");
         Bullet bullet = new Bullet(player.getSpaceship().getPosition(), 10, player.getSpaceship().getDirection(), graphics);
         bulletController.addBullet(bullet);
     }

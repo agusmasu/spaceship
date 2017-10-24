@@ -24,16 +24,16 @@ public class BulletController {
 
     //Added method
     public void update(float time, float maxX, float maxY){
-        for (Bullet bullet: bulletsOnScreen){
+        for (int i = 0; i< bulletsOnScreen.size(); i++){
 
-            if(bullet.getPosition().x() > maxX) bullet.kill();
-            if(bullet.getPosition().y() > maxY) bullet.kill();
+            Bullet bullet = bulletsOnScreen.get(i);
+
+            //if(bullet.getPosition().x() > maxX) bullet.kill();
+            //if(bullet.getPosition().y() > maxY) bullet.kill();
 
             if(!bullet.isAlive()) bulletsOnScreen.remove(bullet);
 
             bullet.move();
-
-            bullet.setShape(new Rectangle(Math.round(bullet.getPosition().x()), Math.round(bullet.getPosition().y()), 10, 10));
         }
     }
 
