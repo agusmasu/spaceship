@@ -40,6 +40,7 @@ public class PlayerController {
         }
 
 
+
     }
 
     public Player getPlayer(int playerNumber){
@@ -73,5 +74,7 @@ public class PlayerController {
         return result;
     }
 
-
+    public List<Player> getPlayerHistory() {
+        return playerHistory;
+    }
 }

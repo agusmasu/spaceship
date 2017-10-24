@@ -31,20 +31,8 @@ public class BulletController {
 
             if(!bullet.isAlive()) bulletsOnScreen.remove(bullet);
 
-            switch (bullet.getBulletDirection()){
-                case UP:
-                    bullet.move(0, 4);
-                    break;
-                case DOWN:
-                    bullet.move(0 , -4);
-                    break;
-                case LEFT:
-                    bullet.move(-4, 0);
-                    break;
-                case RIGHT:
-                    bullet.move(4, 0);
-                    break;
-            }
+            bullet.move();
+
             bullet.setShape(new Rectangle(Math.round(bullet.getPosition().x()), Math.round(bullet.getPosition().y()), 10, 10));
         }
     }

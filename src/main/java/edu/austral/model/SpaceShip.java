@@ -19,9 +19,11 @@ public class SpaceShip extends AbstractModel {
 
     public SpaceShip(Vector2 position, Weapon standart) {
         super(position, new Rectangle(Math.round(position.x()), Math.round(position.y()), 100, 100),
-                "edu.austral.resources.spaceship.png", "SpaceShip");
+                "resources/spaceship.png", "SpaceShip");
         standardWeapon = standart;
         health = 100;
+        width = 30;
+        height = 30;
     }
 
     public float getHealth() {
@@ -61,16 +63,21 @@ public class SpaceShip extends AbstractModel {
                 position = position.$plus(new Vector2(-5, 1));
                 break;
         }
+        autoUpdateShape();
     }
 
     @Override
     public void collisionedWith(AbstractModel collisionable) {
         if (collisionable.getType() == "Asteroid"){
             health -= 20;
+            System.out.println("Asteroid collided");
         }
         else if (collisionable.getType() == "Bullet"){
             health -= ((Bullet)collisionable).getDamage();
         }
+    }
 
+    private void autoUpdateShape(){
+        shape = new Rectangle(Math.round(position.x()), Math.round(position.y()), width, height);
     }
 }

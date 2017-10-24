@@ -10,6 +10,7 @@ import edu.austral.util.CollisionEngine;
 import edu.austral.util.Collisionable;
 import edu.austral.view.UIManager;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -42,14 +43,16 @@ public class GameController {
         playerController.update(time, board);
         bulletController.update(time, board.getWidth(), board.getHeight());
 
-        List<AbstractModel> toDraw = asteroidController.getAsteroidsOnScreen();
+        List<AbstractModel> toDraw = new ArrayList<>();
+        toDraw.addAll(asteroidController.getAsteroidsOnScreen());
         toDraw.addAll(playerController.getSpaceShips());
         toDraw.addAll(bulletController.getBulletsOnScreen());
 
-
-
         //Adds alll lists to UIManager
-        uiManager.appendsListToDrawables(toDraw);
+
+        uiManager.setToDraw(toDraw);
+
+        engine.checkCollisions(uiManager.getToDraw());
     }
 
     //Occurs when a key is pressed
@@ -59,6 +62,8 @@ public class GameController {
 
         KeyDictionary oneDict = one.getKeys();
         //KeyDictionary twoDict = two.getKeys();
+
+        if(code == oneDict.getShoot()) shoot(one);
 
         //Moving player one spaceship
         one.getSpaceship().move(getIntentionFromKey(code, oneDict));
@@ -70,8 +75,8 @@ public class GameController {
 
     //Reads key info, from a dictionary
     private KeyDirection getIntentionFromKey(int code, KeyDictionary dict){
-        if(code == dict.getUp()) return KeyDirection.UP;
-        else if(code == dict.getDown()) return KeyDirection.DOWN;
+        if(code == dict.getUp()) return KeyDirection.DOWN;
+        else if(code == dict.getDown()) return KeyDirection.UP;
         else if(code == dict.getLeft()) return KeyDirection.LEFT;
         else if(code == dict.getRight()) return KeyDirection.RIGHT;
         else return KeyDirection.NONE;
@@ -84,7 +89,10 @@ public class GameController {
         engine = new CollisionEngine();
     }
 
-    public void addPlayer(Player player){
-        playerController.createPlayer(player);
+    private void shoot(Player player){
+        if (!playerController.getPlayerHistory().contains(player)) return;
+        Bullet bullet = new Bullet(player.getSpaceship().getPosition(), 10, player.getSpaceship().getDirection());
+        bulletController.addBullet(bullet);
     }
+
 }

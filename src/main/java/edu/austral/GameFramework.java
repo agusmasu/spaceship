@@ -1,22 +1,25 @@
 package edu.austral;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 
 import java.awt.event.KeyEvent;
 
 public abstract class GameFramework extends PApplet {
 
     @Override public void settings() {
+        //background(loadImage("resources/background.png"));
         size(500, 500);
     }
 
     @Override public void setup() {
+
         clear();
     }
 
     @Override public void draw() {
         clear();
-        draw(1/frameRate, this);
+        draw((frameRate / 60) * 100, this);
     }
 
 

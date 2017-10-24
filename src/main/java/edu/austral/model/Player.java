@@ -1,6 +1,7 @@
 package edu.austral.model;
 
 import edu.austral.model.key.KeyDictionary;
+import edu.austral.model.key.KeyDirection;
 
 /**
  * Created by AlumnosFI on 17/10/2017.
@@ -38,4 +39,6 @@ public class Player {
     public String getName() {
         return name;
     }
+
+
 }

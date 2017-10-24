@@ -2,6 +2,7 @@ package edu.austral.util
 
 import java.awt.Shape
 import java.awt.geom.Area
+import scala.collection.JavaConverters._
 
 trait Collisionable[T <: Collisionable[T]] {
   def getShape: Shape
@@ -10,10 +11,11 @@ trait Collisionable[T <: Collisionable[T]] {
 }
 
 class CollisionEngine[T <: Collisionable[T]] {
-  def checkCollisions(collisionables: List[T]): Unit = {
-    if (collisionables.isEmpty) return
+  def checkCollisions(collisionables: java.util.List[T]): Unit = {
+    val myCollisionables = collisionables.asScala.toList
+    if (myCollisionables.isEmpty) return
 
-    checkCollisions(collisionables.head, collisionables.tail)
+    checkCollisions(myCollisionables.head, myCollisionables.tail)
   }
 
   private def testIntersection(shapeA: Shape, shapeB: Shape): Boolean = {

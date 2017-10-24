@@ -32,22 +32,18 @@ public class Main extends GameFramework {
         SpaceShip ss = new SpaceShip(new Vector2(0,0), weapon);
 
         one.setSpaceship(ss);
-        gameController.addPlayer(one);
+        gameController.playerController.createPlayer(one);
 
     }
 
     @Override public void draw(float time, PApplet graphics) {
-        //System.out.println("Running at "+ frameRate+ " FPS");
+        System.out.println("Running at "+frameRate + "FPS");
         gameController.update(time);
         List<AbstractModel> models = gameController.uiManager.getToDraw();
-        //System.out.println(models.size());
-        for(AbstractModel model: models){
-            if(model.getType() == "Asteroid") ellipse(model.getPosition().x(), model.getPosition().y(), 27,27);
-            if(model.getType() == "SpaceShip") rect(model.getPosition().x(), model.getPosition().y(), 27,27);
-        }
-        //testing();
 
+        gameController.uiManager.draw(graphics);
 
+        image(loadImage("resources/bullet.jpg"), 10, 10 , 10, 10);
 
     }
 
@@ -65,20 +61,9 @@ public class Main extends GameFramework {
         System.out.println("X: "+ gameController.playerController.getPlayer(1).getSpaceship().getPosition().x()+ ", Y: "+ gameController.playerController.getPlayer(1).getSpaceship().getPosition().y());
         System.out.println("hola");
 
-        switch (key) {
-            case 'w':
-                gameController.onKeyPressed(VK_W);
-                break;
-            case 'a':
-                gameController.onKeyPressed(VK_A);
-                break;
-            case 's':
-                gameController.onKeyPressed(VK_S);
-                break;
-            case 'd':
-                gameController.onKeyPressed(VK_D);
-                break;
-        }
+        System.out.println(keyCode);
+        gameController.onKeyPressed(keyCode);
+
         draw();
     }
 }

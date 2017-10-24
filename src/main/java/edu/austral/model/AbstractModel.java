@@ -1,5 +1,6 @@
 package edu.austral.model;
 
+import edu.austral.model.key.KeyDirection;
 import edu.austral.util.Collisionable;
 import edu.austral.util.Vector2;
 
@@ -15,6 +16,26 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
     protected Shape shape;
     private String imagePath;
     protected boolean isAlive;
+    protected KeyDirection direction;
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    protected int width, height;
+
+    public AbstractModel(Vector2 position, Shape shape, String imagePath, String type, KeyDirection direction) {
+        this.position = position;
+        this.shape = shape;
+        this.imagePath = imagePath;
+        this.type = type;
+        isAlive = true;
+        this.direction = direction;
+    }
 
     public AbstractModel(Vector2 position, Shape shape, String imagePath, String type) {
         this.position = position;
@@ -22,6 +43,7 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
         this.imagePath = imagePath;
         this.type = type;
         isAlive = true;
+        this.direction = KeyDirection.RIGHT;
     }
 
     public Vector2 getPosition() {
@@ -30,12 +52,15 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
 
     public void move(float x, float y){
         position = position.$plus(new Vector2(x,y));
+        if (x > 0 ) direction = KeyDirection.RIGHT;
+        else if (x < 0) direction = KeyDirection.LEFT;
+        else if (y > 0) direction = KeyDirection.UP;
+        else if(y > 0 ) direction = KeyDirection.DOWN;
     }
 
     public void moveTo(float x, float y){
         position = new Vector2(x,y);
     }
-
 
     @Override
     public Shape getShape() {
@@ -58,5 +83,13 @@ public abstract class AbstractModel implements Collisionable<AbstractModel>{
 
     public void setShape(Shape shape) {
         this.shape = shape;
+    }
+
+    public KeyDirection getDirection() {
+        return direction;
+    }
+
+    public void setDirection(KeyDirection direction) {
+        this.direction = direction;
     }
 }
